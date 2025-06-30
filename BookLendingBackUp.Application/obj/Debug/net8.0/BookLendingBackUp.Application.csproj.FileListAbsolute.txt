@@ -1,0 +1,45 @@
+C:\Users\HP\source\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.deps.json
+C:\Users\HP\source\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.dll
+C:\Users\HP\source\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.pdb
+C:\Users\HP\source\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.dll
+C:\Users\HP\source\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.pdb
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfo.cs
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLend.1AFD719F.Up2Date
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.dll
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\refint\BookLendingBackUp.Application.dll
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.pdb
+C:\Users\HP\source\repos\BookLendingBackUp.Application\obj\Debug\net8.0\ref\BookLendingBackUp.Application.dll
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.deps.json
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.dll
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.pdb
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.dll
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.pdb
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.AssemblyReference.cache
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfoInputs.cache
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfo.cs
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.CoreCompileInputs.cache
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLend.1AFD719F.Up2Date
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.dll
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\refint\BookLendingBackUp.Application.dll
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.pdb
+C:\Users\basma.khalaf\source\repos\repos\BookLendingBackUp.Application\obj\Debug\net8.0\ref\BookLendingBackUp.Application.dll
+E:\USB Drive\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.deps.json
+E:\USB Drive\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.dll
+E:\USB Drive\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Application.pdb
+E:\USB Drive\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.dll
+E:\USB Drive\repos\BookLendingBackUp.Application\bin\Debug\net8.0\BookLendingBackUp.Domain.pdb
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.AssemblyReference.cache
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfoInputs.cache
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.AssemblyInfo.cs
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.csproj.CoreCompileInputs.cache
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLend.1AFD719F.Up2Date
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.dll
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\refint\BookLendingBackUp.Application.dll
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\BookLendingBackUp.Application.pdb
+E:\USB Drive\repos\BookLendingBackUp.Application\obj\Debug\net8.0\ref\BookLendingBackUp.Application.dll
