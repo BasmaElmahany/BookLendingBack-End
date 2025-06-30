@@ -1,0 +1,302 @@
+[
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.AuthController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Auth/confirmemail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BookLendingBackUp.Application.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BookLendingBackUp.Application.DTOs.RegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "Create",
+    "RelativePath": "api/Book",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookdto",
+        "Type": "BookLendingBackUp.Application.DTOs.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "GetById",
+    "RelativePath": "api/Book/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "Update",
+    "RelativePath": "api/Book/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookdto",
+        "Type": "BookLendingBackUp.Application.DTOs.BookDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "Delete",
+    "RelativePath": "api/Book/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "GetByCatalogIdAsync",
+    "RelativePath": "api/Book/{id}/GetAllcatalogBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BookController",
+    "Method": "GetAll",
+    "RelativePath": "api/Book/GetAllBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BorrowBookController",
+    "Method": "BorrowBook",
+    "RelativePath": "api/BorrowBook/borrow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BorrowBookController",
+    "Method": "DelayedBookCheckerService",
+    "RelativePath": "api/BorrowBook/DelayedBookCheckerService",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BorrowBookController",
+    "Method": "DelayedBooks",
+    "RelativePath": "api/BorrowBook/DelayedBooks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.BorrowBookController",
+    "Method": "ReturnBook",
+    "RelativePath": "api/BorrowBook/return",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "borrowId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "GetBooksInCatalog",
+    "RelativePath": "api/Catalog/{id}/books",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "Delete",
+    "RelativePath": "api/Catalog/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "GetAll",
+    "RelativePath": "api/Catalog/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "GetById",
+    "RelativePath": "api/Catalog/GetbyId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "Create",
+    "RelativePath": "api/Catalog/PostCatalog",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "BookLendingBackUp.Application.DTOs.CatalogDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookLendingBackUp.Controllers.CatalogController",
+    "Method": "Update",
+    "RelativePath": "api/Catalog/Putcatalog/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "catalog",
+        "Type": "BookLendingBackUp.Application.DTOs.CatalogDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

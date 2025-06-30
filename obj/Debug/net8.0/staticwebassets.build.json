@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "sEyFeFvriSiFOXmmAW3KJpbJZThoNK9qNbWvuf2MTm0=",
+  "Source": "BookLendingBackUp",
+  "BasePath": "_content/BookLendingBackUp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

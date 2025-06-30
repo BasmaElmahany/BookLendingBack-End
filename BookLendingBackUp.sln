@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendingBackUp", "BookLendingBackUp.csproj", "{F56C8AFB-2E4B-4F6C-AE9E-9BCC3AC7777F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendingBackUp.Domain", "..\BookLendingBackUp.Domain\BookLendingBackUp.Domain.csproj", "{187BC2EE-97BA-40FC-AC16-7AF537929CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendingBackUp.Application", "..\BookLendingBackUp.Application\BookLendingBackUp.Application.csproj", "{D574A6FE-19DC-40BE-8A27-F571615EE4F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendingBackUp.Infrastructure", "..\BookLendingBackUp.Infrastructure\BookLendingBackUp.Infrastructure.csproj", "{FF8105C1-3218-43DB-9E15-4AE7F54C705B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLendingBackUp.Tests", "..\BookLendingBackUp.Tests\BookLendingBackUp.Tests.csproj", "{CE288EBE-888C-41DB-9AF8-C89F41593B1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F56C8AFB-2E4B-4F6C-AE9E-9BCC3AC7777F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56C8AFB-2E4B-4F6C-AE9E-9BCC3AC7777F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56C8AFB-2E4B-4F6C-AE9E-9BCC3AC7777F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56C8AFB-2E4B-4F6C-AE9E-9BCC3AC7777F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187BC2EE-97BA-40FC-AC16-7AF537929CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187BC2EE-97BA-40FC-AC16-7AF537929CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187BC2EE-97BA-40FC-AC16-7AF537929CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187BC2EE-97BA-40FC-AC16-7AF537929CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D574A6FE-19DC-40BE-8A27-F571615EE4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D574A6FE-19DC-40BE-8A27-F571615EE4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D574A6FE-19DC-40BE-8A27-F571615EE4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D574A6FE-19DC-40BE-8A27-F571615EE4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8105C1-3218-43DB-9E15-4AE7F54C705B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8105C1-3218-43DB-9E15-4AE7F54C705B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8105C1-3218-43DB-9E15-4AE7F54C705B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8105C1-3218-43DB-9E15-4AE7F54C705B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE288EBE-888C-41DB-9AF8-C89F41593B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE288EBE-888C-41DB-9AF8-C89F41593B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE288EBE-888C-41DB-9AF8-C89F41593B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE288EBE-888C-41DB-9AF8-C89F41593B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9C30F25-1406-4813-AF16-6012CFB7BD9A}
+	EndGlobalSection
+EndGlobal
