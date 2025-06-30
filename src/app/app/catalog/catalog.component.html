@@ -1,0 +1,67 @@
+<div class="container mt-4">
+  <h3 class="mb-3">📚 Catalog Management</h3>
+
+  <!-- Catalog Form -->
+  <div id="catalog-form" class="card shadow-sm p-3 mb-4">
+    <h5 class="mb-3">
+      {{ selectedId ? '✏️ Editing Catalog ID: ' + selectedId : '➕ Add New Catalog' }}
+    </h5>
+
+    <form [formGroup]="catalogForm" (ngSubmit)="submit()">
+      <div class="mb-3">
+        <input formControlName="name" class="form-control" placeholder="Catalog Name" />
+      </div>
+
+      <div class="mb-3">
+        <textarea formControlName="description" class="form-control" rows="3" placeholder="Description"></textarea>
+      </div>
+
+      <div>
+        <button type="submit" class="btn btn-primary">
+          {{ selectedId ? 'Update' : 'Add' }}
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary ms-2"
+          *ngIf="selectedId"
+          (click)="resetForm()"
+        >
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Catalog List Table -->
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th class="text-center">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let catalog of catalogs" [class.table-warning]="catalog.id === selectedId">
+
+        <td>{{ catalog.name }}</td>
+        <td>{{ catalog.description }}</td>
+        <td class="text-center">
+          <button
+            class="btn btn-sm btn-warning me-1"
+            (click)="edit(catalog)"
+            [disabled]="catalog.id === selectedId"
+          >
+            Edit
+          </button>
+          <button
+            class="btn btn-sm btn-danger"
+            (click)="delete(catalog.id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

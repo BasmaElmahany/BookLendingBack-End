@@ -1,0 +1,32 @@
+<div class="container py-4">
+  <h2 class="mb-4 text-primary">📚 Delayed Books</h2>
+
+  <div *ngIf="loading" class="text-center my-5">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+
+  <div *ngIf="!loading && delayedBooks.length === 0" class="alert alert-info">
+    🎉 No delayed books!
+  </div>
+
+  <div class="row" *ngIf="!loading && delayedBooks.length > 0">
+    <div class="col-md-6 mb-4" *ngFor="let book of delayedBooks">
+      <div class="card shadow-sm h-100">
+        <img src="https://placehold.co/600x300?text=Book+Cover" class="card-img-top" alt="Book Image">
+        <div class="card-body">
+          <h5 class="card-title">{{ book.title }}</h5>
+          <p class="card-text"><strong>Author:</strong> {{ book.author }}</p>
+          <p><strong>Description:</strong> {{ book.description }}</p>
+          <p><strong>Borrowed By:</strong> {{ book.fullName }}</p>
+          <p><strong>Catalog:</strong> {{ book.catalogName }}</p>
+          <p class="text-danger">
+            <strong>Due:</strong> {{ book.dueDate | date: 'mediumDate' }}
+          </p>
+          <p class="text-muted">
+            <strong>Borrowed At:</strong> {{ book.borrowedAt | date: 'mediumDate' }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

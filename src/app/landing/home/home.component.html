@@ -1,0 +1,108 @@
+<!-- NAVBAR  -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Book Lending</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" (click)="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="py-5 bg-light border-bottom mb-4">
+  <div class="container">
+    <div class="text-center my-5">
+      <h1 class="fw-bolder">Welcome to Book Lending!</h1>
+      <p class="lead mb-0">"A room without books is like a body without a soul." — Cicero</p>
+    </div>
+  </div>
+</header>
+
+<!-- CATALOG AND BOOK DISPLAY -->
+<div class="container">
+  <div *ngFor="let catalog of catalogs" class="mb-5">
+    <h3 class="mb-4 border-bottom pb-2 text-primary">
+      📚 {{ catalog.name }}
+    </h3>
+
+    <!-- Search -->
+  <div class="mb-3">
+    <input
+      class="form-control"
+      type="text"
+      placeholder="Search books..."
+      [(ngModel)]="searchTerms[catalog.id]"
+      (input)="filterBooks(catalog.id)"
+    />
+  </div>
+
+    <!-- Books in Catalog -->
+  <div class="row">
+    <div
+      class="col-lg-6 mb-4"
+      *ngFor="let book of getPaginatedBooks(catalog.id)"
+    >
+      <div class="card h-100">
+        <img
+          class="card-img-top"
+          [src]="'https://dummyimage.com/700x350/dee2e6/6c757d.jpg'"
+          alt="Book Image"
+        />
+        <div class="card-body">
+          <div class="small text-muted">
+            {{ book.publishedAt | date: 'mediumDate' }}
+          </div>
+          <h5 class="card-title">{{ book.title }}</h5>
+          <p class="card-text">
+            {{ book.description | slice: 0: 100 }}...
+          </p>
+       <a class="btn btn-outline-primary" [routerLink]="['/book', book.id]">View Details →</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Pagination -->
+  <nav *ngIf="totalPages(catalog.id).length > 1">
+    <ul class="pagination justify-content-center">
+      <li
+        class="page-item"
+        *ngFor="let page of totalPages(catalog.id)"
+        [class.active]="currentPageMap[catalog.id] === page"
+      >
+        <a class="page-link" href="#" (click)="setPage(catalog.id, page)">{{
+          page
+        }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <hr>
+  </div>
+
+<button
+  class="btn btn-primary rounded-circle position-fixed"
+  style="bottom: 20px; right: 20px; z-index: 999;"
+  (click)="scrollToTop()"
+  title="Go to top"
+><i class="bi bi-arrow-up"></i>
+  ↑
+</button>
+<!-- FOOTER -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Book Lending Platform 2025</p>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/landing/js/scripts.js"></script>

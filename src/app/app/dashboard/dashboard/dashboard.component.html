@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">📚 BookLending Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <h2 class="text-center mb-4">📊 Admin Dashboard</h2>
+
+  <div class="row g-3 mb-4">
+    <!-- Category Card -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <h5>📁 Manage Categories</h5>
+          <p class="text-muted">Add and edit book categories</p>
+          <button class="btn btn-outline-primary" (click)="toggleCategory()">
+            {{ showCategory ? 'Hide' : 'Show' }} Categories
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book Card -->
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body text-center">
+          <h5>📘 Manage Books</h5>
+          <p class="text-muted">Add, edit and delete books</p>
+          <button class="btn btn-outline-success" (click)="toggleBook()">
+            {{ showBook ? 'Hide' : 'Show' }} Books
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Delayed Books Card -->
+<div class="col-md-6">
+  <div class="card h-100 shadow-sm border-warning">
+    <div class="card-body text-center">
+      <h5 class="card-title text-warning">⏰ Delayed Books</h5>
+      <p class="card-text text-muted">View list of delayed borrowed books</p>
+      <button class="btn btn-outline-warning" (click)="toggleDelayedBooks()">
+        {{ showDelayedBooks ? 'Hide' : 'Show' }} Delayed Books
+      </button>
+    </div>
+  </div>
+</div>
+  <!-- Embedded Components -->
+  <app-catalog *ngIf="showCategory"></app-catalog>
+  <app-book *ngIf="showBook"></app-book>
+  <div *ngIf="showDelayedBooks">
+  <app-delayed-books></app-delayed-books>
+</div>
+</div>

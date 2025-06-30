@@ -1,0 +1,24 @@
+<div class="container d-flex justify-content-center align-items-center vh-100 fade-in">
+    <div class="card shadow p-4" style="width: 100%; max-width: 400px;">
+      <h3 class="text-center mb-4">Login</h3>
+  
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label>Email</label>
+          <input formControlName="email" type="email" class="form-control" [class.is-invalid]="form.get('email')?.invalid && form.get('email')?.touched" />
+          <div class="invalid-feedback">Valid email is required</div>
+        </div>
+  
+        <div class="mb-3">
+          <label>Password</label>
+          <input formControlName="password" type="password" class="form-control" [class.is-invalid]="form.get('password')?.invalid && form.get('password')?.touched" />
+          <div class="invalid-feedback">Password is required</div>
+        </div>
+  
+        <button [disabled]="loading" class="btn btn-primary w-100">
+          {{ loading ? 'Logging in...' : 'Login' }}
+        </button>
+      </form>
+    </div>
+  </div>
+  

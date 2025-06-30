@@ -1,0 +1,106 @@
+<div class="container mt-4">
+  <h3 class="mb-3">📚 Book Management</h3>
+
+  <!-- Book Form -->
+  <div id="book-form" class="card shadow-sm p-4 mb-4">
+    <h5>{{ selectedId ? '✏️ Edit Book' : '➕ Add New Book' }}</h5>
+    <form [formGroup]="bookForm" (ngSubmit)="submit()">
+      
+      <!-- Title -->
+      <div class="mb-3">
+        <input formControlName="title" class="form-control" placeholder="Title" />
+        <small class="text-danger" *ngIf="f['title'].touched && f['title'].invalid">
+          Title is required (min 2 characters)
+        </small>
+      </div>
+
+      <!-- Author -->
+      <div class="mb-3">
+        <input formControlName="author" class="form-control" placeholder="Author" />
+        <small class="text-danger" *ngIf="f['author'].touched && f['author'].invalid">
+          Author is required (min 3 characters)
+        </small>
+      </div>
+
+      <!-- Description -->
+      <div class="mb-3">
+        <textarea formControlName="description" class="form-control" rows="2" placeholder="Description"></textarea>
+        <small class="text-danger" *ngIf="f['description'].touched && f['description'].invalid">
+          Description must be at least 5 characters
+        </small>
+      </div>
+
+      <!-- Published Date -->
+      <div class="mb-3">
+        <input formControlName="publishedAt" type="date" class="form-control" />
+        <small class="text-danger" *ngIf="f['publishedAt'].touched && f['publishedAt'].invalid">
+          Please select a valid publish date
+        </small>
+      </div>
+
+      <!-- Catalog -->
+      <div class="mb-3">
+        <select formControlName="catalogId" class="form-select">
+          <option [ngValue]="null" disabled selected>Select Catalog</option>
+          <option *ngFor="let cat of catalogs" [ngValue]="cat.id">{{ cat.name }}</option>
+        </select>
+        <small class="text-danger" *ngIf="f['catalogId'].touched && f['catalogId'].invalid">
+          Please select a catalog
+        </small>
+      </div>
+
+      <!-- Availability -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" formControlName="isAvailable" />
+        <label class="form-check-label">Available</label>
+      </div>
+
+      <!-- Buttons -->
+      <button class="btn btn-success" type="submit">{{ selectedId ? 'Update' : 'Add' }}</button>
+      <button class="btn btn-secondary ms-2" type="button" *ngIf="selectedId" (click)="resetForm()">Cancel</button>
+    </form>
+  </div>
+<div class="mb-3 d-flex justify-content-between align-items-center">
+ <input
+  type="text"
+  class="form-control w-50"
+  [(ngModel)]="searchTerm"
+  (ngModelChange)="currentPage = 1"
+  placeholder="🔍 Search by title or author..."
+/>
+</div>
+  <!-- Book List -->
+  <table class="table table-bordered table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+       
+        <th>Published</th>
+        <th>Available</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr *ngFor="let book of filteredBooks" [class.table-warning]="book.id === selectedId">
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.publishedAt | date: 'yyyy-MM-dd' }}</td>
+    <td>
+      <span class="badge bg-success" *ngIf="book.isAvailable">Yes</span>
+      <span class="badge bg-danger" *ngIf="!book.isAvailable">No</span>
+    </td>
+    <td>
+      <button class="btn btn-sm btn-warning me-1" (click)="edit(book)">Edit</button>
+      <button class="btn btn-sm btn-danger" (click)="delete(book.id)">Delete</button>
+    </td>
+  </tr>
+</tbody>
+
+  </table>
+</div>
+<div class="d-flex justify-content-center align-items-center mt-3">
+  <button class="btn btn-outline-secondary me-2" [disabled]="currentPage === 1" (click)="changePage(-1)">⬅️ Prev</button>
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+  <button class="btn btn-outline-secondary ms-2" [disabled]="currentPage === totalPages" (click)="changePage(1)">Next ➡️</button>
+</div>
